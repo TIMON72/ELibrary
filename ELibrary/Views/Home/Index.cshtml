@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript">
+        constants = {
+            tokenKey: 'tokenKey',
+            authorizationUser: '@Url.RouteUrl("DefaultApi", new {controller = "Identity", action = "AuthorizationUser" })',
+            getAllBooks: '@Url.RouteUrl("DefaultApi", new {controller = "ELibQuery", action = "GetAllBooks" })',
+            editBook: '@Url.RouteUrl("DefaultApi", new {controller = "ELib", action = "EditBook" })',
+            deleteBook: '@Url.RouteUrl("DefaultApi", new {controller = "ELib", action = "DeleteBook" })'
+        }
+    </script>
+    <title>ELibrary</title>
+</head>
+<body>
+    <div id="content">
+    </div>
+    <script type="text/javascript" src="@Url.Content("~/assets/bundle.js")"></script>
+</body>
+</html>
